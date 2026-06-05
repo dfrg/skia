@@ -559,6 +559,8 @@ protected:
                     if (hinted_advance != x_advance && hinted_advance != 0) {
                         x_advance = hinted_advance;
                     }
+                } else {
+                    x_advance = roundf(x_advance);
                 }
             }
         }
